@@ -31,4 +31,4 @@ Personal portfolio website built with **Next.js (App Router)** and **Tailwind CS
     public/           static assets (images, resume)
 
 ## Deployment
-Planned deployment via Vercel.
+Hosted on Vercel and connected to a custom domain (solomonbell.com).
