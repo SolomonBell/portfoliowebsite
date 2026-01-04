@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Personal portfolio website built with **Next.js (App Router)** and **Tailwind CSS** to showcase projects, skills, and experience for peers and potential recruiters.
+This project is a personal portfolio website built with **Next.js  (App Router)** using **React** functional components written in **TypeScript**. The user interface is composed with semantic **HTML** through **JSX/TSX** and styled entirely using **Tailwind CSS** utility classes. Development is done locally with **Node.js**, and the project is structured using reusable components and page sections. At build time, the application is compiled into standard **HTML**, **CSS**, and **JavaScript** that runs in the browser, with deployment planned via **Vercel** and a custom domain connection in the future.
 
 ## Tech Stack
 - Next.js
