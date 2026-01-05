@@ -1,7 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
-import Projects from "./sections/Projects";
 import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Certificates from "./sections/Certificates";
 import Contact from "./sections/Contact";
 
 export default function Home() {
@@ -9,8 +10,9 @@ export default function Home() {
     <main className="min-h-screen bg-neutral-950 text-neutral-50">
       <Navbar />
       <Hero />
-      <Projects />
       <About />
+      <Projects />
+      <Certificates />
       <Contact />
     </main>
   );
