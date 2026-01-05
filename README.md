@@ -31,4 +31,4 @@ This project is a personal portfolio website built with **Next.js  (App Router)*
     public/           static assets (images, resume)
 
 ## Deployment
-Hosted on Vercel and connected to a custom domain (solomonbell.com).
+Hosted on **Cloudflare** and connected to a custom domain (solomonbell.com).
