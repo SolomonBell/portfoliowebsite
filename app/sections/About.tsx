@@ -21,7 +21,7 @@ export default function About() {
           a skill reinforced by years of structured rowing training, where progress depends
           on iteration, quick learning, and adaptation. I am a high-performance athlete
           with the aspiration to compete at the international level, and I have completed
-          about 15 million meters on the indoor rower.
+          over 15 million meters on the indoor rower.
         </p>
 
         <p className="indent-8">
