@@ -9,10 +9,9 @@ export default function About() {
       <div className="mt-4 max-w-3xl space-y-4 text-neutral-300 leading-relaxed">
         <p className="indent-8">
           I am majoring in Computer Science and Engineering and Mathematical Economics
-          with a GPA of 3.7. I am proficient in C, RISC-V Assembly, Python, R, and Java,
+          with a GPA of 3.69. I am proficient in C, RISC-V Assembly, Python, R, and Java,
           and completed coursework in Linear Algebra, Discrete Structures, and statistics.
-          In Python, I coded a Retirement Income Calculator, and in Java, a multi-player
-          Poker Game. I am comfortable using tools such as GitHub, IntelliJ, and VS Code,
+          I am comfortable using tools such as GitHub, IntelliJ, and VS Code,
           and I have experience collaborating with teams and using the Scrum framework
           to develop software.
         </p>
