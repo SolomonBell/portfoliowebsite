@@ -9,7 +9,7 @@ export default function Certificates() {
       </h2>
 
       <p className="mt-2 max-w-2xl text-neutral-300">
-        Selected certifications for programming, software developement, 
+        Selected certifications for programming, software development,
         financial modeling, and more.
       </p>
 
@@ -77,13 +77,33 @@ export default function Certificates() {
           </div>
         </div>
 
-        {/* Placeholder */}
-        <div className="h-72 w-105 shrink-0 rounded-2xl border border-white/10 bg-white/5 p-5 flex items-center">
-          <div>
-            <h3 className="font-medium">Certificate Name</h3>
-            <p className="mt-1 text-sm text-neutral-300">
-              Institution · Year
-            </p>
+        {/* Bloomberg Market Concepts */}
+        <div
+          className="relative h-72 w-105 shrink-0 rounded-2xl overflow-hidden border border-white/10"
+          style={{
+            backgroundImage:
+              "url('/images/certificates/market-concepts.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/30" />
+
+          <div className="absolute inset-y-0 left-0 z-10 flex items-center p-5">
+            <div>
+              <h3
+                className="font-medium text-white"
+                style={{ textShadow: "0 1px 4px rgba(0,0,0,0.95)" }}
+              >
+                Market Concepts
+              </h3>
+              <p
+                className="mt-1 text-sm text-neutral-200"
+                style={{ textShadow: "0 1px 4px rgba(0,0,0,0.95)" }}
+              >
+                Bloomberg · 10 hours
+              </p>
+            </div>
           </div>
         </div>
       </div>
