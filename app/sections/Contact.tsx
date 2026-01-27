@@ -9,11 +9,11 @@ export default function Contact() {
       <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
 
       <p className="mt-2 max-w-2xl text-neutral-300">
-        The best way to reach me is via email. I’m always open to discussing
+        The best way to reach me is through email. I’m always open to discussing
         projects, opportunities, and collaborations.
       </p>
 
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-6 flex flex-wrap justify-center gap-3">
         <a
           href={LINKS.email}
           className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"
