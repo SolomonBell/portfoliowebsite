@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Certificates from "./sections/Certificates";
+import Hobbies from "./sections/Hobbies";
 import Contact from "./sections/Contact";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Projects />
       <Certificates />
+      <Hobbies />
       <Contact />
     </main>
   );

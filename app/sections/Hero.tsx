@@ -20,7 +20,7 @@ export default function Hero() {
             {SITE.tagline} · {SITE.location}
           </p>
 
-          <h1 className="mt-3 text-4xl font-semibold tracking-tight">
+          <h1 className="mt-3 text-4xl font-semibold tracking-tight text-center">
             {SITE.name}
           </h1>
           <p className="mt-4 max-w-2xl indent-8 text-neutral-300 leading-relaxed">

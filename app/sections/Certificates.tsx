@@ -4,7 +4,7 @@ export default function Certificates() {
       id="certificates"
       className="mx-auto max-w-5xl px-6 py-16 border-t border-white/10"
     >
-      <h2 className="text-2xl font-semibold tracking-tight">
+      <h2 className="text-2xl font-semibold tracking-tight text-center">
         Certificates
       </h2>
 

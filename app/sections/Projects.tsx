@@ -4,7 +4,7 @@ export default function Projects() {
       id="projects"
       className="mx-auto max-w-5xl px-6 py-16 border-t border-white/10"
     >
-      <h2 className="text-2xl font-semibold tracking-tight">Projects</h2>
+      <h2 className="text-2xl font-semibold tracking-tight text-center">Projects</h2>
 
       <p className="mt-2 max-w-2xl text-neutral-300">
         Selected software and systems projects. Details and repositories will be
