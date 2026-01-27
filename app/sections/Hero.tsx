@@ -26,7 +26,9 @@ export default function Hero() {
           <p className="mt-4 max-w-2xl indent-8 text-neutral-300 leading-relaxed">
             I am a Computer Science and Engineering and Mathematical Economics student
             focused on building software systems that model, analyze, and solve complex
-            real-world problems using mathematics, data, and computation.
+            real-world problems using mathematics, data, and computation. I would love 
+            to help develop and refine your products. If you are interested, let’s set 
+            up a call.
           </p>
         </div>
       </div>
