@@ -24,7 +24,7 @@ export default function Hobbies() {
           <div className="mt-4 max-w-3xl space-y-4 text-neutral-300 leading-relaxed">
             <p className="indent-8">
               I am a high-performance athlete with the aspiration to compete at the international
-              level, and I have completed over 15 million meters on the indoor rower, plus 10 million
+              level. I have completed over 15 million meters on the indoor rower, plus 10 million
               on the water. In the past, I have rowed with Potomac Boat Club, Pocock Rowing Center,
               Central Pennsylvania Rowing Association, Bucknell University, and Seattle Scullers.
             </p>
