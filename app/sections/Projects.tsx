@@ -8,12 +8,13 @@ export default function Projects() {
         Projects
       </h2>
 
-      <div className="mt-8 grid gap-6">
+      {/* Fixed-size cards with horizontal scroll */}
+      <div className="mt-8 flex gap-6 overflow-x-auto pb-2">
         {/* Project Template */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+        <div className="h-72 w-105 shrink-0 rounded-2xl border border-white/10 bg-white/5 p-5 flex flex-col">
           <h3 className="font-medium">Project Name</h3>
 
-          <p className="mt-2 text-sm text-neutral-300">
+          <p className="mt-2 text-sm text-neutral-300 flex-1">
             Short description of the project, its purpose, and what problem it
             addresses.
           </p>
@@ -29,10 +30,10 @@ export default function Projects() {
         </div>
 
         {/* Duplicate template */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+        <div className="h-72 w-105 shrink-0 rounded-2xl border border-white/10 bg-white/5 p-5 flex flex-col">
           <h3 className="font-medium">Project Name</h3>
 
-          <p className="mt-2 text-sm text-neutral-300">
+          <p className="mt-2 text-sm text-neutral-300 flex-1">
             Short description of the project, its purpose, and what problem it
             addresses.
           </p>
@@ -48,7 +49,7 @@ export default function Projects() {
         </div>
 
         {/* Placeholder card */}
-        <div className="rounded-2xl border border-dashed border-white/15 p-5">
+        <div className="h-72 w-105 shrink-0 rounded-2xl border border-dashed border-white/15 p-5 flex items-center justify-center">
           <h3 className="font-medium text-neutral-400">
             Additional projects coming soon
           </h3>
