@@ -12,7 +12,7 @@ export default function About() {
             src="/images/headshot.jpg"
             alt="Photo of Solomon Bell"
             fill
-            className="object-cover object-top"
+            className="object-cover object-center-15%"
             priority
           />
         </div>
