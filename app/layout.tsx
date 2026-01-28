@@ -11,13 +11,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <html lang="en">
-      <body className="bg-neutral-950 text-neutral-50 antialiased">
-        {process.env.NEXT_PUBLIC_GA_ID && (
+      <head>
+        {GA_ID ? (
           <>
             <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
               strategy="afterInteractive"
             />
             <Script id="ga-init" strategy="afterInteractive">
@@ -25,11 +27,13 @@ export default function RootLayout({
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                gtag('config', '${GA_ID}', { send_page_view: true });
               `}
             </Script>
           </>
-        )}
+        ) : null}
+      </head>
+      <body className="bg-neutral-950 text-neutral-50 antialiased">
         {children}
       </body>
     </html>
