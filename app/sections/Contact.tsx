@@ -1,4 +1,4 @@
-import { LINKS, SITE } from "../lib/constants";
+import { LINKS } from "../lib/constants";
 
 export default function Contact() {
   return (
@@ -6,12 +6,9 @@ export default function Contact() {
       id="contact"
       className="mx-auto max-w-5xl px-6 py-16 border-t border-white/10"
     >
-      <h2 className="text-2xl font-semibold tracking-tight text-center">Contact</h2>
-
-      <p className="mt-2 max-w-2xl text-neutral-300">
-        The best way to reach me is through email. I’m always open to discussing
-        projects, opportunities, and collaborations.
-      </p>
+      <h2 className="text-2xl font-semibold tracking-tight text-center">
+        Contact
+      </h2>
 
       <div className="mt-6 flex flex-wrap justify-center gap-3">
         <a

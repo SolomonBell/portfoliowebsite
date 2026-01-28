@@ -1,7 +1,8 @@
 export const SITE = {
   name: "Solomon Bell",
-  tagline: "Computer Science Engineering & Mathematical Economics Student",
+  major: "Computer Science Engineering & Mathematical Economics Student",
   location: "Seattle, Washington",
+  school: "Bucknell University",
   email: "solomon@satchsol.com",
 };
 

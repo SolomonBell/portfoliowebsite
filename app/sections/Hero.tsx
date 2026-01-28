@@ -1,4 +1,4 @@
-import { LINKS, SITE } from "../lib/constants";
+import { SITE } from "../lib/constants";
 
 export default function Hero() {
   return (
@@ -9,7 +9,9 @@ export default function Hero() {
         </h1>
 
         <p className="mt-3 text-sm text-neutral-400 text-center">
-          {SITE.tagline} · {SITE.location}
+          {SITE.major}
+          <br />
+          {SITE.school}
         </p>
       </div>
     </section>

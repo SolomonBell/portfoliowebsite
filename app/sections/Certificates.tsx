@@ -8,11 +8,6 @@ export default function Certificates() {
         Certificates
       </h2>
 
-      <p className="mt-2 max-w-2xl text-neutral-300">
-        Selected certifications for programming, software development,
-        financial modeling, and more.
-      </p>
-
       {/* Fixed-size cards with horizontal scroll */}
       <div className="mt-8 flex gap-6 overflow-x-auto pb-2">
         {/* Python for Everybody */}
