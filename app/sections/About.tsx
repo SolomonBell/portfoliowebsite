@@ -7,7 +7,7 @@ export default function About() {
       className="mx-auto max-w-5xl px-6 py-16 border-t border-white/10"
     >
       <div className="grid gap-10 md:grid-cols-[180px_1fr]">
-        <div className="relative h-44 w-44 overflow-hidden rounded-2xl border border-white/10">
+        <div className="relative h-44 w-44 overflow-hidden rounded-2xl border border-white/10 mx-auto md:mx-0">
           <Image
             src="/images/headshot.jpg"
             alt="Photo of Solomon Bell"
