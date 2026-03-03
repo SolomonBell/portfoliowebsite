@@ -34,7 +34,7 @@ const projects: Project[] = [
         href: "https://github.com/SolomonBell/flashcards-app",
       },
       {
-        label: "Still in Development",
+        label: "Video Demo To Come",
       },
     ],
   },
