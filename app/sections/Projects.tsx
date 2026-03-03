@@ -11,6 +11,7 @@ type Project = {
   tags: string[];
   links: ProjectLink[];
   status?: string;
+  image?: string; // optional background image
 };
 
 const projects: Project[] = [
@@ -37,50 +38,67 @@ const projects: Project[] = [
         label: "Video Demo To Come",
       },
     ],
+    image: "/images/flashcards-preview.jpg", // 🔥 Put image in public/images
   },
 ];
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="h-72 w-105 shrink-0 rounded-2xl border border-white/10 bg-white/5 p-5 flex flex-col">
-      <div className="flex items-start justify-between gap-3">
-        <h3 className="font-medium">{project.title}</h3>
-        {project.status && (
-          <span className="text-xs text-neutral-300 border border-white/15 bg-white/5 px-2 py-1 rounded-full">
-            {project.status}
-          </span>
-        )}
-      </div>
+    <div className="relative h-72 w-105 shrink-0 rounded-2xl overflow-hidden border border-white/10 bg-white/5">
 
-      <p className="mt-2 text-sm text-neutral-300 flex-1">
-        {project.description}
-      </p>
+      {/* Background Image */}
+      {project.image && (
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-25"
+          style={{ backgroundImage: `url(${project.image})` }}
+        />
+      )}
 
-      <p className="mt-3 text-xs text-neutral-400">
-        {project.tags.join(" · ")}
-      </p>
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/40" />
 
-      <div className="mt-4 flex flex-wrap gap-4 text-sm">
-        {project.links.map((link) =>
-          link.href ? (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noreferrer"
-              className="text-neutral-200 hover:text-white underline underline-offset-4 decoration-white/20 hover:decoration-white/40 transition"
-            >
-              {link.label}
-            </a>
-          ) : (
-            <span
-              key={link.label}
-              className="text-neutral-500 cursor-default"
-            >
-              {link.label}
+      {/* Content */}
+      <div className="relative p-5 flex flex-col h-full">
+        <div className="flex items-start justify-between gap-3">
+          <h3 className="font-medium">{project.title}</h3>
+          {project.status && (
+            <span className="text-xs text-neutral-200 border border-white/20 bg-black/40 px-2 py-1 rounded-full">
+              {project.status}
             </span>
-          )
-        )}
+          )}
+        </div>
+
+        <p className="mt-2 text-sm text-neutral-200 flex-1">
+          {project.description}
+        </p>
+
+        <p className="mt-3 text-xs text-neutral-300 text-center">
+          {project.tags.join(" · ")}
+        </p>
+
+        {/* Centered Links */}
+        <div className="mt-4 flex justify-center gap-6 text-sm">
+          {project.links.map((link) =>
+            link.href ? (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-white hover:text-neutral-300 underline underline-offset-4 decoration-white/30 hover:decoration-white/60 transition"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <span
+                key={link.label}
+                className="text-neutral-400 cursor-default"
+              >
+                {link.label}
+              </span>
+            )
+          )}
+        </div>
       </div>
     </div>
   );
@@ -103,7 +121,7 @@ export default function Projects() {
 
         <div className="h-72 w-105 shrink-0 rounded-2xl border border-dashed border-white/15 p-5 flex items-center justify-center">
           <h3 className="font-medium text-neutral-400">
-            Additional projects coming soon
+            More Projects Coming Soon
           </h3>
         </div>
       </div>
