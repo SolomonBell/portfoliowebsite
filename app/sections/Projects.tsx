@@ -19,15 +19,16 @@ const projects: Project[] = [
     title: "Flashcards Platform",
     status: "In Development",
     description:
-      "Spaced-repetition web platform for multi-user classrooms with shared decks and AI-assisted grading. Implemented staged recall logic, session analytics with CSV export, and structured user stories while conducting stakeholder interviews to refine product direction.",
+      "Built a spaced-repetition web app for multi-user classrooms with shared decks, AI grading, and flashcard generation. Implemented staged recall algorithms, dual-storage architecture, a Node.js AI proxy, and session analytics with CSV export while refining the product through stakeholder interviews.",
     tags: [
-      "Vanilla JS (ES Modules)",
+      "JavaScript",
       "HTML/CSS",
+      "Node.js",
       "Supabase",
-      "localStorage",
-      "Web Crypto API",
+      "REST APIs",
+      "Dual Storage Architecture",
       "Spaced Repetition",
-      "Analytics + CSV Export",
+      "Analytics",
     ],
     links: [
       {
@@ -38,7 +39,7 @@ const projects: Project[] = [
         label: "Video Demo To Come",
       },
     ],
-    image: "/images/flashcards-preview.jpg", // 🔥 Put image in public/images
+    image: "/images/flashcards-preview.jpg", // Put image in public/images
   },
 ];
 
