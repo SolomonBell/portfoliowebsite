@@ -29,6 +29,7 @@ const projects: Project[] = [
       "Dual Storage Architecture",
       "Spaced Repetition",
       "Analytics",
+      "Railway",
     ],
     links: [
       {
