@@ -39,7 +39,7 @@ export default function Contact() {
         <a
           href={LINKS.resume}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"
         >
           Resume

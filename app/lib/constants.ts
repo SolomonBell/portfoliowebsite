@@ -10,7 +10,7 @@ export const LINKS = {
   email: "mailto:solomon@satchsol.com",
   linkedin: "https://www.linkedin.com/in/solomonbell",
   github: "https://github.com/SolomonBell",
-  resume: "/pdfs/resume.pdf",
+  resume: "https://docs.google.com/document/d/1-wT03gsmVOsKzkvzqv-JhM0vgFYAM5Ko5yawxs_30Bc/edit?usp=sharing",
 };
 
 export const NAV_LINKS = [
