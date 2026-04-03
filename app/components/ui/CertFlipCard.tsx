@@ -12,6 +12,8 @@ export type Certificate = {
   lightBack?: boolean;
 };
 
+const CARD_OVERLAY = "absolute inset-0 bg-black/40";
+
 export default function CertFlipCard({ cert }: { cert: Certificate }) {
   const [hovered, setHovered] = useState(false);
   const [locked, setLocked] = useState(false);
@@ -44,7 +46,7 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-black/40" />
+          <div className={CARD_OVERLAY} />
           <div className="absolute inset-y-0 left-0 z-10 flex items-center p-5">
             <div>
               <h3

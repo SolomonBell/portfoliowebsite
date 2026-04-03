@@ -18,6 +18,8 @@ export type Project = {
   collaboration?: "solo" | "collaborative";
 };
 
+const CARD_OVERLAY = "absolute inset-0 bg-black/40";
+
 export default function ProjectFlipCard({ project }: { project: Project }) {
   const [hovered, setHovered] = useState(false);
   const [locked, setLocked] = useState(false);
@@ -49,7 +51,7 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
               style={{ backgroundImage: `url(${project.image})` }}
             />
           )}
-          <div className="absolute inset-0 bg-black/40" />
+          <div className={CARD_OVERLAY} />
 
           <div className="relative h-full">
             {project.status && (
