@@ -78,23 +78,26 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
             transform: "rotateY(180deg)",
           }}
         >
-          <h3 className={`text-sm font-medium ${cert.lightBack ? "text-black/60" : "text-white/60"}`}>
-            {cert.title.replace("\n", " ")}
-          </h3>
-
-          <div className="mt-3 flex flex-wrap gap-2 flex-1 content-start">
-            {cert.skills.map((skill) => (
-              <span
-                key={skill}
-                className={`text-xs px-2.5 py-1 rounded-full border ${
-                  cert.lightBack
-                    ? "border-black/15 bg-black/10 text-neutral-900"
-                    : "border-white/15 bg-white/10 text-neutral-200"
-                }`}
-              >
-                {skill}
-              </span>
-            ))}
+          <div className="flex h-full items-center">
+            <div className="flex flex-col gap-3">
+              <h3 className={`text-sm font-medium ${cert.lightBack ? "text-black/60" : "text-white/60"}`}>
+                {cert.title.replace("\n", " ")}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {cert.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className={`text-xs px-2.5 py-1 rounded-full border ${
+                      cert.lightBack
+                        ? "border-black/15 bg-black/10 text-neutral-900"
+                        : "border-white/15 bg-white/10 text-neutral-200"
+                    }`}
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

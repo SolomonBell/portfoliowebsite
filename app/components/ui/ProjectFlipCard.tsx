@@ -109,15 +109,17 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
             )}
           </div>
 
-          <div className="mt-3 flex flex-wrap gap-2 flex-1 content-start">
-            {project.skills.map((skill) => (
-              <span
-                key={skill}
-                className="text-xs px-2.5 py-1 rounded-full border border-white/15 bg-white/10 text-neutral-200"
-              >
-                {skill}
-              </span>
-            ))}
+          <div className="flex-1 flex items-center">
+            <div className="flex flex-wrap gap-2">
+              {project.skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="text-xs px-2.5 py-1 rounded-full border border-white/15 bg-white/10 text-neutral-200"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="mt-3 flex justify-center gap-6 text-sm">
