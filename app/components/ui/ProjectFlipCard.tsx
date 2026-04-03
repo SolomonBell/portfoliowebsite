@@ -30,7 +30,7 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
       className="relative h-72 w-105 shrink-0 cursor-pointer select-none rounded-2xl overflow-hidden border border-white/10"
       onPointerEnter={(e) => { if (e.pointerType === "mouse") setHovered(true); }}
       onPointerLeave={(e) => { if (e.pointerType === "mouse") setHovered(false); }}
-      onClick={() => setIsFlipped((f) => !f)}
+      onClick={() => { setHovered(false); setIsFlipped((f) => !f); }}
     >
       {!showBack ? (
         /* Front */
