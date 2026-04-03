@@ -34,6 +34,7 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
         style={{
           transformStyle: "preserve-3d",
           transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+          willChange: "transform",
         }}
       >
         {/* Front */}
@@ -41,6 +42,7 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
           className="absolute inset-0 rounded-2xl overflow-hidden border border-white/10"
           style={{
             backfaceVisibility: "hidden",
+            WebkitBackfaceVisibility: "hidden",
             backgroundImage: `url('${cert.image}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -75,6 +77,7 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
           className={`absolute inset-0 rounded-2xl overflow-hidden border border-white/10 ${cert.backClassName} p-5 flex flex-col`}
           style={{
             backfaceVisibility: "hidden",
+            WebkitBackfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
           }}
         >

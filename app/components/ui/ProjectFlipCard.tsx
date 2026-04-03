@@ -38,12 +38,13 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
         style={{
           transformStyle: "preserve-3d",
           transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+          willChange: "transform",
         }}
       >
         {/* Front */}
         <div
           className="absolute inset-0 rounded-2xl overflow-hidden border border-white/10 bg-white/5"
-          style={{ backfaceVisibility: "hidden" }}
+          style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
         >
           {project.image && (
             <div
@@ -85,6 +86,7 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
           className="absolute inset-0 rounded-2xl overflow-hidden border border-white/10 bg-neutral-900 p-5 flex flex-col"
           style={{
             backfaceVisibility: "hidden",
+            WebkitBackfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
           }}
         >
