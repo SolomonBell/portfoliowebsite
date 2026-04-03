@@ -50,18 +50,20 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
           )}
           <div className="absolute inset-0 bg-black/40" />
 
-          <div className="relative flex flex-col items-center justify-center h-full p-5 text-center">
-            <h3
-              className="font-medium text-white"
-              style={{ textShadow: "0 1px 4px rgba(0,0,0,0.95)" }}
-            >
-              {project.title}
-            </h3>
+          <div className="relative h-full">
             {project.status && (
-              <span className="mt-2 text-xs text-neutral-200 border border-white/20 bg-black/40 px-2 py-1 rounded-full">
+              <span className="absolute top-3 right-3 text-xs text-neutral-200 border border-white/20 bg-black/40 px-2 py-1 rounded-full">
                 {project.status}
               </span>
             )}
+            <div className="flex items-center h-full px-5">
+              <h3
+                className="font-medium text-white"
+                style={{ textShadow: "0 1px 4px rgba(0,0,0,0.95)" }}
+              >
+                {project.title}
+              </h3>
+            </div>
           </div>
         </div>
 
