@@ -30,8 +30,13 @@ export default function About() {
             </p>
 
             <p className="indent-8">
-              I would love to help develop and refine your products. If you are interested, let’s
-              set up a call.
+              I would love to help develop and refine your products. If you are interested, let&apos;s{" "}
+              <a
+                href="mailto:solomon@satchsol.com"
+                className="text-white underline underline-offset-4 decoration-white/30 hover:decoration-white/70 transition"
+              >
+                set up a call
+              </a>.
             </p>
           </div>
         </div>
