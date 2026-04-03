@@ -13,6 +13,7 @@ export type Project = {
   skills: string[];
   links: ProjectLink[];
   status?: string;
+  subtitle?: string;
   image?: string;
   collaboration?: "solo" | "collaborative";
 };
@@ -57,12 +58,22 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
               </span>
             )}
             <div className="flex items-center h-full px-5">
-              <h3
-                className="font-medium text-white"
-                style={{ textShadow: "0 1px 4px rgba(0,0,0,0.95)" }}
-              >
-                {project.title}
-              </h3>
+              <div>
+                <h3
+                  className="font-medium text-white"
+                  style={{ textShadow: "0 1px 4px rgba(0,0,0,0.95)" }}
+                >
+                  {project.title}
+                </h3>
+                {project.subtitle && (
+                  <p
+                    className="mt-1 text-sm text-white/70"
+                    style={{ textShadow: "0 1px 4px rgba(0,0,0,0.95)" }}
+                  >
+                    {project.subtitle}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>

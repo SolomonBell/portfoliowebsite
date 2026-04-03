@@ -25,6 +25,7 @@ const projects: Project[] = [
         label: "Video Demo To Come",
       },
     ],
+    subtitle: "Personal Project",
     image: "/images/flashcards-preview.jpg",
     collaboration: "collaborative",
   },
