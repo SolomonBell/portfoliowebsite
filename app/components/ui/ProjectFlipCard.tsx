@@ -76,9 +76,21 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
           <div className="flex items-center justify-between gap-2">
             <h3 className="text-sm font-medium text-white/60">{project.title}</h3>
             {project.collaboration && (
-              <span className="text-xs px-2 py-0.5 rounded-full border border-white/15 bg-white/10 text-neutral-400 whitespace-nowrap">
-                {project.collaboration === "collaborative" ? "Built in Collaboration" : "Built Independently"}
-              </span>
+              project.collaboration === "collaborative" ? (
+                <a
+                  href="https://www.downtownschoolseattle.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="text-xs px-2 py-0.5 rounded-full border border-white/15 bg-white/10 text-neutral-400 whitespace-nowrap hover:text-neutral-200 hover:border-white/30 transition"
+                >
+                  Built in Collaboration
+                </a>
+              ) : (
+                <span className="text-xs px-2 py-0.5 rounded-full border border-white/15 bg-white/10 text-neutral-400 whitespace-nowrap">
+                  Built Independently
+                </span>
+              )
             )}
           </div>
 
