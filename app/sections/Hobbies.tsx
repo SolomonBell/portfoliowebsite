@@ -34,29 +34,12 @@ export default function Hobbies() {
               <a
                 href="https://www.strava.com/athletes/62781821"
                 target="_blank"
-                rel="noreferrer"
-                className="font-medium text-white hover:opacity-80 transition-opacity"
+                rel="noopener noreferrer"
+                className="text-white underline underline-offset-4 decoration-white/30 hover:decoration-white/70 transition"
               >
                 Strava page
               </a>.
             </p>
-          </div>
-
-          <div className="mt-5 flex gap-4">
-            <a
-              href="https://www.strava.com/athletes/62781821"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-white hover:opacity-80 transition-opacity"
-            >
-              Strava
-            </a>
-            <a
-              href="mailto:solomon@satchsol.com"
-              className="font-medium text-white hover:opacity-80 transition-opacity"
-            >
-              Set Up a Call
-            </a>
           </div>
         </div>
       </div>
