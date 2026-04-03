@@ -41,6 +41,23 @@ export default function Hobbies() {
               </a>.
             </p>
           </div>
+
+          <div className="mt-5 flex gap-4">
+            <a
+              href="https://www.strava.com/athletes/62781821"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-white hover:opacity-80 transition-opacity"
+            >
+              Strava
+            </a>
+            <a
+              href="mailto:solomon@satchsol.com"
+              className="font-medium text-white hover:opacity-80 transition-opacity"
+            >
+              Set Up a Call
+            </a>
+          </div>
         </div>
       </div>
     </section>
