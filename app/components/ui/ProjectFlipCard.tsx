@@ -22,15 +22,15 @@ const CARD_OVERLAY = "absolute inset-0 bg-black/40";
 
 export default function ProjectFlipCard({ project }: { project: Project }) {
   const [hovered, setHovered] = useState(false);
-  const [locked, setLocked] = useState(false);
-  const showBack = locked || hovered;
+  const [isFlipped, setIsFlipped] = useState(false);
+  const showBack = isFlipped || hovered;
 
   return (
     <div
       className="relative h-72 w-105 shrink-0 cursor-pointer select-none rounded-2xl overflow-hidden border border-white/10"
       onPointerEnter={(e) => { if (e.pointerType === "mouse") setHovered(true); }}
       onPointerLeave={(e) => { if (e.pointerType === "mouse") setHovered(false); }}
-      onClick={() => setLocked((l) => !l)}
+      onClick={() => setIsFlipped((f) => !f)}
     >
       {!showBack ? (
         /* Front */
