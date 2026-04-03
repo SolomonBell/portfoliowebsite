@@ -44,7 +44,7 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/40" />
           <div className="absolute inset-y-0 left-0 z-10 flex items-center p-5">
             <div>
               <h3
@@ -59,7 +59,7 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
                 ))}
               </h3>
               <p
-                className="mt-1 text-sm text-neutral-200"
+                className="mt-1 text-sm text-white/70"
                 style={{ textShadow: "0 1px 4px rgba(0,0,0,0.95)" }}
               >
                 {cert.subtitle}
