@@ -26,6 +26,7 @@ const projects: Project[] = [
       },
     ],
     image: "/images/flashcards-preview.jpg",
+    collaboration: "collaborative",
   },
 ];
 

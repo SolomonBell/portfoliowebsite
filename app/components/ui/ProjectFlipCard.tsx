@@ -14,6 +14,7 @@ export type Project = {
   links: ProjectLink[];
   status?: string;
   image?: string;
+  collaboration?: "solo" | "collaborative";
 };
 
 export default function ProjectFlipCard({ project }: { project: Project }) {
@@ -72,7 +73,14 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
             transform: "rotateY(180deg)",
           }}
         >
-          <h3 className="text-sm font-medium text-white/60">{project.title}</h3>
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="text-sm font-medium text-white/60">{project.title}</h3>
+            {project.collaboration && (
+              <span className="text-xs px-2 py-0.5 rounded-full border border-white/15 bg-white/10 text-neutral-400 whitespace-nowrap">
+                {project.collaboration === "collaborative" ? "Built in Collaboration" : "Built Independently"}
+              </span>
+            )}
+          </div>
 
           <div className="mt-3 flex flex-wrap gap-2 flex-1 content-start">
             {project.skills.map((skill) => (

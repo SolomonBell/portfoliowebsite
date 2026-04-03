@@ -9,6 +9,7 @@ export type Certificate = {
   image: string;
   skills: string[];
   backClassName: string;
+  lightBack?: boolean;
 };
 
 export default function CertFlipCard({ cert }: { cert: Certificate }) {
@@ -75,7 +76,7 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
             transform: "rotateY(180deg)",
           }}
         >
-          <h3 className="text-sm font-medium text-white/60">
+          <h3 className={`text-sm font-medium ${cert.lightBack ? "text-black/60" : "text-white/60"}`}>
             {cert.title.replace("\n", " ")}
           </h3>
 
@@ -83,7 +84,11 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
             {cert.skills.map((skill) => (
               <span
                 key={skill}
-                className="text-xs px-2.5 py-1 rounded-full border border-white/15 bg-white/10 text-neutral-200"
+                className={`text-xs px-2.5 py-1 rounded-full border ${
+                  cert.lightBack
+                    ? "border-black/15 bg-black/10 text-neutral-900"
+                    : "border-white/15 bg-white/10 text-neutral-200"
+                }`}
               >
                 {skill}
               </span>
