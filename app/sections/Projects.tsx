@@ -20,7 +20,7 @@ const projects: Project[] = [
       },
     ],
     subtitle: "Client Project",
-    image: "/maintenance-script.jpg",
+    image: "/images/maintenance-script.jpg",
   },
   {
     title: "Flashcards Platform",
