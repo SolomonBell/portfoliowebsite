@@ -2,6 +2,27 @@ import ProjectFlipCard, { type Project } from "../components/ui/ProjectFlipCard"
 
 const projects: Project[] = [
   {
+    title: "Reliable Storage Maintenance Scheduler",
+    status: "In Progress",
+    description:
+      "Website-integrated maintenance booking tool that lets customers schedule time and describe issues in advance, helping streamline service requests and save time.",
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Scheduling Workflow",
+      "Customer Intake",
+      "Operational Efficiency",
+    ],
+    links: [
+      {
+        label: "Video Demo To Come",
+      },
+    ],
+    subtitle: "Client Project",
+    image: "/maintenance-script.jpg",
+  },
+  {
     title: "Flashcards Platform",
     description:
       "Built a spaced-repetition web app for multi-user classrooms with shared decks, AI grading, and flashcard generation. Implemented staged recall algorithms, dual-storage architecture, a Node.js AI proxy, and session analytics with CSV export while refining the product through stakeholder interviews.",
