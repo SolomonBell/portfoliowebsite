@@ -7,12 +7,13 @@ const projects: Project[] = [
     description:
       "Website-integrated maintenance booking tool that lets customers schedule time and describe issues in advance, helping streamline service requests and save time.",
     skills: [
-      "Next.js",
-      "TypeScript",
-      "React",
+      "Workflow Automation",
       "Scheduling Workflow",
       "Customer Intake",
       "Operational Efficiency",
+      "Form Handling",
+      "Queue Management",
+      "API Design",
     ],
     links: [
       {
