@@ -2,7 +2,7 @@ import ProjectFlipCard, { type Project } from "../components/ui/ProjectFlipCard"
 
 const projects: Project[] = [
   {
-    title: "Reliable Storage Maintenance Scheduler",
+    title: "Maintenance Scheduler",
     status: "In Progress",
     description:
       "Website-integrated maintenance booking tool that lets customers schedule time and describe issues in advance, helping streamline service requests and save time.",
@@ -16,6 +16,10 @@ const projects: Project[] = [
       "API Design",
     ],
     links: [
+      {
+        label: "Reliable Storage",
+        href: "https://www.reliablestorage.com/",
+      },
       {
         label: "Video Demo To Come",
       },
