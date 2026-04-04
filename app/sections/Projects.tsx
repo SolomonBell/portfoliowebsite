@@ -3,7 +3,6 @@ import ProjectFlipCard, { type Project } from "../components/ui/ProjectFlipCard"
 const projects: Project[] = [
   {
     title: "Flashcards Platform",
-    status: "In Development",
     description:
       "Built a spaced-repetition web app for multi-user classrooms with shared decks, AI grading, and flashcard generation. Implemented staged recall algorithms, dual-storage architecture, a Node.js AI proxy, and session analytics with CSV export while refining the product through stakeholder interviews.",
     skills: [
