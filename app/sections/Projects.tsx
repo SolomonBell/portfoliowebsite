@@ -17,6 +17,10 @@ const projects: Project[] = [
     ],
     links: [
       {
+        label: "Live Site",
+        href: "https://firststepstudy.com",
+      },
+      {
         label: "GitHub",
         href: "https://github.com/SolomonBell/flashcards-app",
       },
