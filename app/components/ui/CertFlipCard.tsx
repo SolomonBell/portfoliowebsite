@@ -30,14 +30,11 @@ export default function CertFlipCard({ cert }: { cert: Certificate }) {
     >
       {!showBack ? (
         /* Front */
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url('${cert.image}')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <div className="absolute inset-0 bg-white/5">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-25"
+            style={{ backgroundImage: `url('${cert.image}')` }}
+          />
           <div className={CARD_OVERLAY} />
           <div className="absolute inset-y-0 left-0 z-10 flex items-center p-5">
             <div>
