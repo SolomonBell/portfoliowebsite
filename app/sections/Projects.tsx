@@ -2,23 +2,30 @@ import ProjectFlipCard, { type Project } from "../components/ui/ProjectFlipCard"
 
 const projects: Project[] = [
   {
-    title: "Maintenance Scheduler",
+    title: "Maintenance Booking System",
     status: "In Progress",
     description:
-      "Website-integrated maintenance booking tool that lets customers schedule time and describe issues in advance, helping streamline service requests and save time.",
+      "Automated maintenance booking system for a self-storage business, handling scheduling, intake, payments, and confirmations through a unified workflow.",
     skills: [
+      "Google Apps Script",
+      "Pipedream",
+      "Stripe API",
+      "DocuSeal API",
+      "SendGrid",
+      "Google Sheets",
+      "Webhooks",
       "Workflow Automation",
-      "Scheduling Workflow",
-      "Customer Intake",
-      "Operational Efficiency",
-      "Form Handling",
-      "Queue Management",
-      "API Design",
+      "Event-Driven Architecture",
+      "Serverless Backend",
     ],
     links: [
       {
-        label: "Reliable Storage",
+        label: "Live Site",
         href: "https://www.reliablestorage.com/",
+      },
+      {
+        label: "GitHub",
+        href: "https://github.com/SolomonBell/reliable-storage-script",
       },
       {
         label: "Video Demo To Come",
