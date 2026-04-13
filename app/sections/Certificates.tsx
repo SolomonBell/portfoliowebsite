@@ -17,8 +17,7 @@ const certificates: Certificate[] = [
       "XML",
       "Data Analysis",
     ],
-    backClassName: "bg-yellow-400",
-    lightBack: true,
+    backClassName: "bg-neutral-900",
   },
   {
     id: "java",
@@ -32,7 +31,7 @@ const certificates: Certificate[] = [
       "Data Structures",
       "Algorithm Analysis",
     ],
-    backClassName: "bg-red-950",
+    backClassName: "bg-neutral-900",
   },
   {
     id: "bloomberg",
