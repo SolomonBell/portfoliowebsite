@@ -20,7 +20,7 @@ const projects: Project[] = [
     ],
     links: [
       {
-        label: "Live Site",
+        label: "Company Site",
         href: "https://www.reliablestorage.com/",
       },
       {
