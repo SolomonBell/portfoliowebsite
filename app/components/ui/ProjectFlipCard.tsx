@@ -16,6 +16,7 @@ export type Project = {
   subtitle?: string;
   image?: string;
   collaboration?: "solo" | "collaborative";
+  collaborationHref?: string;
 };
 
 const CARD_OVERLAY = "absolute inset-0 bg-black/40";
@@ -77,7 +78,7 @@ export default function ProjectFlipCard({ project }: { project: Project }) {
             {project.collaboration && (
               project.collaboration === "collaborative" ? (
                 <a
-                  href="https://www.downtownschoolseattle.org/"
+                  href={project.collaborationHref ?? "https://www.downtownschoolseattle.org/"}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}

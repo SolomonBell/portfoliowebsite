@@ -33,6 +33,8 @@ const projects: Project[] = [
     ],
     subtitle: "Client Project",
     image: "/images/maintenance-script.jpg",
+    collaboration: "collaborative",
+    collaborationHref: "https://www.reliablestorage.com/",
   },
   {
     title: "Flashcards Platform",
