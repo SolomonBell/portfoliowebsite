@@ -44,6 +44,15 @@ export default function Contact() {
         >
           Resume
         </a>
+
+        <a
+          href="https://docs.google.com/document/d/1cf_fZplzz8HdyWW4NK8iLAygDTYfmFsHoJkH2bDfpEw/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"
+        >
+          Cover Letter
+        </a>
       </div>
     </section>
   );
