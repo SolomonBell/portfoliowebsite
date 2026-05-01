@@ -3,7 +3,6 @@ import ProjectFlipCard, { type Project } from "../components/ui/ProjectFlipCard"
 const projects: Project[] = [
   {
     title: "Maintenance Booking System",
-    status: "In Progress",
     description:
       "Automated maintenance booking system for a self-storage business, handling scheduling, intake, payments, and confirmations through a unified workflow.",
     skills: [
@@ -26,9 +25,6 @@ const projects: Project[] = [
       {
         label: "GitHub",
         href: "https://github.com/SolomonBell/reliable-storage-script",
-      },
-      {
-        label: "Video Demo To Come",
       },
     ],
     subtitle: "Client Project",
@@ -58,9 +54,6 @@ const projects: Project[] = [
       {
         label: "GitHub",
         href: "https://github.com/SolomonBell/flashcards-app",
-      },
-      {
-        label: "Video Demo To Come",
       },
     ],
     subtitle: "Personal Project",
