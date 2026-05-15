@@ -19,12 +19,16 @@ const projects: Project[] = [
     ],
     links: [
       {
-        label: "Company Site",
-        href: "https://www.reliablestorage.com/",
-      },
-      {
         label: "GitHub",
         href: "https://github.com/SolomonBell/reliable-storage-script",
+      },
+      {
+        label: "Video Walkthrough",
+        href: "https://www.youtube.com/watch?v=v4nrowu-jsk",
+      },
+      {
+        label: "Company Site",
+        href: "https://www.reliablestorage.com/",
       },
     ],
     subtitle: "Client Project",
